@@ -76,6 +76,13 @@
         }
 
         browserRedirect("https://surpasshr.github.io/lyd/");
+	
+	var snowConfig = {
+            color: [266 / 256, 266 / 256, 170 / 256],
+            count: 2000,
+            opacity: 0.8,
+            density: 1 / 200,
+        };
 
             function startDateCountUp(tick) {
             var locale = {
@@ -111,5 +118,7 @@
             };
         }
 </script>
+<!-- 雪花飞舞 -->
+<script type="text/javascript" src="./js/snowflakes.js" defer></script>
 <script src="./js/flip.js"></script>
 </html>
