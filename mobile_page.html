@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+	<meta name="format-detection" content="telephone=yes" />
+	<meta name="msapplication-tap-highlight" content="no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge，chrome=1">
+    <link rel="stylesheet" href="./css/flip.css">
+    <link rel="stylesheet" href="./css/mobile.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="main">
+
+        <div class="tick" data-did-init="startDateCountUp">
+
+            <div class="title">胡胡和胖胖已经在一起</div>
+
+            <div data-repeat="true" data-layout="horizontal center fit" data-transform="preset(d, h, m, s) -> delay">
+
+                <div class="tick-group">
+
+                    <div data-key="value" data-repeat="true" data-transform="pad(00) -> split -> delay">
+
+                        <span data-view="flip"></span>
+
+                    </div>
+
+                    <span data-key="label" data-view="text" class="tick-label"></span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="grp_photo">
+
+        <img class="grp_photo" src="https://thumbnail0.baidupcs.com/thumbnail/0a422058aq886abb20e8e5810f2e9884?fid=2771675468-250528-134720009476425&rt=pr&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-gdfqOprvp%2bppe24cyQQwZyq%2bkuA%3d&expires=8h&chkbd=0&chkv=0&dp-logid=387946193540780214&dp-callid=0&time=1610874000&size=c1920_u1080&quality=90&vuk=2771675468&ft=image&autopolicy=1" alt="">
+
+    </div>
+
+
+    <footer class="translucent">
+
+        <div><a href="">&copy; 2021 胡睿</a>
+
+            <span class="hide-on-mobile"> | <a href="http://www.xiyou.edu.cn/" rel="noopener">西安邮电大学</a></span></div>
+
+    </footer>
+
+</body>
+
+<script>
+            function startDateCountUp(tick) {
+            var locale = {
+                YEAR_PLURAL: 'Jaren',
+                YEAR_SINGULAR: 'Jaar',
+                MONTH_PLURAL: 'Maanden',
+                MONTH_SINGULAR: 'Maand',
+                WEEK_PLURAL: 'Weken',
+                WEEK_SINGULAR: 'Week',
+                DAY_PLURAL: '天',
+                DAY_SINGULAR: '天',
+                HOUR_PLURAL: '小时',
+                HOUR_SINGULAR: '小时',
+                MINUTE_PLURAL: '分钟',
+                MINUTE_SINGULAR: '分钟',
+                SECOND_PLURAL: '秒',
+                SECOND_SINGULAR: '秒',
+                MILLISECOND_PLURAL: 'Milliseconden',
+                MILLISECOND_SINGULAR: 'Milliseconde'
+            };
+
+            for (var key in locale) {
+                if (!locale.hasOwnProperty(key)) {
+                    continue;
+                }
+                tick.setConstant(key, locale[key]);
+            }
+            var counter = Tick.count.up('2021-01-01T02:14:00');
+            counter.onupdate = function(value) {
+                // by default value will contain an
+                // array with days, hours, minutes, seconds
+                tick.value = value;
+            };
+        }
+</script>
+<script src="./js/flip.js"></script>
+</html>
