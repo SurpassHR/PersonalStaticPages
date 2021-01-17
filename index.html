@@ -40,9 +40,9 @@
 
     <footer class="translucent">
 
-        <div><a href="https://www.yangshangzhen.com/">&copy; 2021 胡睿</a>
+        <div><a href="">&copy; 2021 胡睿</a>
 
-            <span class="hide-on-mobile"> | <a href="https://beian.miit.gov.cn/" rel="noopener">西安邮电大学</a></span></div>
+            <span class="hide-on-mobile"> | <a href="http://www.xiyou.edu.cn/" rel="noopener">西安邮电大学</a></span></div>
 
     </footer>
 
@@ -50,7 +50,6 @@
 
         //判断是否移动端，如果是则跳转到指定的URL地址
         function browserRedirect(url) {
-            url = "baidu.com";
             //只读的字符串，声明了浏览器用于 HTTP 请求的用户代理头的值
             var sUserAgent = navigator.userAgent.toLowerCase();
             var bIsIphoneOs = sUserAgent.match(/iphone os/i) == "iphone os";
@@ -61,7 +60,7 @@
             var bIsCE = sUserAgent.match(/windows ce/i) == "windows ce";
             var bIsWM = sUserAgent.match(/windows mobile/i) == "windows mobile";
             if (bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM) {
-                window.location.replace(baidu.com);
+                window.location.replace(url);
             }
         }
 
@@ -69,7 +68,7 @@
 
         var snowConfig = {
             color: [266 / 256, 266 / 256, 170 / 256],
-            count: 2000,
+            count: 1000,
             opacity: 0.8,
             density: 1 / 200,
         };
