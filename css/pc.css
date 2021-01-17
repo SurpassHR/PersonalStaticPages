@@ -108,18 +108,13 @@ a {
     cursor: pointer;
 }
 
-video {
+iframe {
     display: block;
     position: absolute;
     left: 50%;
     /* 定位父级的50% */
-    top: 55%;
+    bottom: 35%;
     transform: translate(-50%, -50%);
     /*自己的50% */
     opacity: 50%;
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    -moz-backdrop-filter: blur(10px);
-    -ms-backdrop-filter: blur(10px);
-    -o-backdrop-filter: blur(10px);
 }

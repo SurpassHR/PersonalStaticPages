@@ -95,7 +95,6 @@ footer {
     -o-backdrop-filter: blur(10px);
     background-color: rgba(255, 255, 255, .1);
     font-size: .075rem;
-    margin-left: ;
 }
 
 * {
@@ -141,4 +140,15 @@ div.grp_photo {
     transform: translate(-50%, -50%);
     /*自己的50% */
     transform: rotate(5deg);
+}
+
+iframe {
+    display: block;
+    position: absolute;
+    left: 50%;
+    /* 定位父级的50% */
+    bottom: 2%;
+    transform: translate(-50%, -50%);
+    /*自己的50% */
+    opacity: 50%;
 }
