@@ -71,7 +71,7 @@ body {
 footer {
     bottom: 0;
     color: rgba(255, 255, 255, .2);
-    padding: 15px 20px;
+    padding: 20px 20px;
     padding-left: calc(env(safe-area-inset-left) + 20px);
     padding-right: calc(env(safe-area-inset-right) + 20px);
     position: fixed;
@@ -111,10 +111,20 @@ a {
 iframe {
     display: block;
     position: absolute;
+
     left: 50%;
     /* 定位父级的50% */
     bottom: 35%;
     transform: translate(-50%, -50%);
     /*自己的50% */
     opacity: 50%;
+}
+
+.translucent div {
+    position: absolute;
+    left: 50%;
+    /* 定位父级的50% */
+    top: 50%;
+    transform: translate(-50%, -50%);
+    /*自己的50% */
 }
