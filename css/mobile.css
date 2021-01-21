@@ -26,7 +26,7 @@ html {
 .tick-label {
     font-size: .4rem;
     text-align: center;
-    color: rgba(255, 255, 255, .5);
+    color: rgba(255, 255, 255, .75);
 }
 
 .tick-group {
@@ -39,7 +39,7 @@ html {
     font-size: .8rem;
     font-weight: bold;
     text-align: center;
-    color: rgba(255, 255, 255, .7);
+    color: rgba(255, 255, 255, .9);
 }
 
 .main {
