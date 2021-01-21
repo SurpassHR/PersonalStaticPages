@@ -110,7 +110,6 @@ a {
 }
 
 .translucent a {
-    color: rgba(255, 255, 255, .5);
     cursor: pointer;
 }
 
@@ -155,6 +154,7 @@ iframe {
 
 
 .translucent div {
+    color: rgba(255, 255, 255, .5);
     position: absolute;
     left: 50%;
     /* 定位父级的50% */
