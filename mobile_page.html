@@ -1,23 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, user-scalable=0, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-	<meta name="apple-mobile-web-app-capable" content="yes" />
-	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-	<meta name="format-detection" content="telephone=yes" />
-	<meta name="msapplication-tap-highlight" content="no" />
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=0, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="format-detection" content="telephone=yes" />
+    <meta name="msapplication-tap-highlight" content="no" />
     <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="@Url.Content("./images/4.png")" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="@Url.Content(" ./images/4.png")" />
     <link rel="stylesheet" href="./css/flip.css">
     <link rel="stylesheet" href="./css/mobile.css">
+    <link rel="stylesheet" href="./css/audioplayer.css" />
     <meta http-equiv="X-UA-Compatible" content="IE=Edge，chrome=1">
     <title>Anniversary</title>
 </head>
-<body>
-    <!-- <video controls="false" autoplay="true" name="media" hidden="true"> <source src="./music/Carry You.mp3" type="audio/mpeg"></video> -->
 
-    <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=470547416&auto=1&height=66"></iframe>
+<body>
+
+    <script data-href="https://github.com/SurpassHR" data-target="_blank" src="./js/githubCorner.js"></script>
 
     <div class="main">
 
@@ -51,17 +54,16 @@
 
     </div>
 
-
     <footer class="translucent">
 
         <div>
-            
+
             <a href="https://hugaotuan.top/">&copy; 2021 胡睿</a>
-            
+
             <span class="hide-on-mobile"> | <a href="http://www.xiyou.edu.cn/" rel="noopener">西安邮电大学</a> | </span>
-            
+
             <a href="https://surpasshr.github.io/lyd/photowall.html">照片墙 | </a>
-        
+
             <span id="busuanzi_container_page_pv">
                 本页面访问量<span id="busuanzi_value_page_pv"></span>次
             </span>
@@ -74,64 +76,64 @@
 
 <script>
 
-            //判断是否移动端，如果是则跳转到指定的URL地址
-            function browserRedirect(url) {
-            //只读的字符串，声明了浏览器用于 HTTP 请求的用户代理头的值
-            var sUserAgent = navigator.userAgent.toLowerCase();
-            var bIsIphoneOs = sUserAgent.match(/iphone os/i) == "iphone os";
-            var bIsMidp = sUserAgent.match(/midp/i) == "midp";
-            var bIsUc7 = sUserAgent.match(/rv:1.2.3.4/i) == "rv:1.2.3.4";
-            var bIsUc = sUserAgent.match(/ucweb/i) == "ucweb";
-            var bIsAndroid = sUserAgent.match(/android/i) == "android";
-            var bIsCE = sUserAgent.match(/windows ce/i) == "windows ce";
-            var bIsWM = sUserAgent.match(/windows mobile/i) == "windows mobile";
-            if (!(bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM)) {
-                window.location.replace(url);
-            }
-        }
+    // //判断是否移动端，如果是则跳转到指定的URL地址
+    // function browserRedirect(url) {
+    // //只读的字符串，声明了浏览器用于 HTTP 请求的用户代理头的值
+    // var sUserAgent = navigator.userAgent.toLowerCase();
+    // var bIsIphoneOs = sUserAgent.match(/iphone os/i) == "iphone os";
+    // var bIsMidp = sUserAgent.match(/midp/i) == "midp";
+    // var bIsUc7 = sUserAgent.match(/rv:1.2.3.4/i) == "rv:1.2.3.4";
+    // var bIsUc = sUserAgent.match(/ucweb/i) == "ucweb";
+    // var bIsAndroid = sUserAgent.match(/android/i) == "android";
+    // var bIsCE = sUserAgent.match(/windows ce/i) == "windows ce";
+    // var bIsWM = sUserAgent.match(/windows mobile/i) == "windows mobile";
+    // if (!(bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM)) {
+    //     window.location.replace(url);
+    // }
+    // }
 
-        browserRedirect("https://surpasshr.github.io/lyd/");
+    browserRedirect("https://surpasshr.github.io/lyd/");
 
-        var snowConfig = {
-            color: [266 / 256, 266 / 256, 170 / 256],
-            count: 2000,
-            opacity: 0.8,
-            density: 1 / 200,
+    var snowConfig = {
+        color: [266 / 256, 266 / 256, 170 / 256],
+        count: 1000,
+        opacity: 0.8,
+        density: 1 / 200,
+    };
+
+    function startDateCountUp(tick) {
+        var locale = {
+            YEAR_PLURAL: 'Jaren',
+            YEAR_SINGULAR: 'Jaar',
+            MONTH_PLURAL: 'Maanden',
+            MONTH_SINGULAR: 'Maand',
+            WEEK_PLURAL: 'Weken',
+            WEEK_SINGULAR: 'Week',
+            DAY_PLURAL: '天',
+            DAY_SINGULAR: '天',
+            HOUR_PLURAL: '小时',
+            HOUR_SINGULAR: '小时',
+            MINUTE_PLURAL: '分钟',
+            MINUTE_SINGULAR: '分钟',
+            SECOND_PLURAL: '秒',
+            SECOND_SINGULAR: '秒',
+            MILLISECOND_PLURAL: 'Milliseconden',
+            MILLISECOND_SINGULAR: 'Milliseconde'
         };
 
-            function startDateCountUp(tick) {
-            var locale = {
-                YEAR_PLURAL: 'Jaren',
-                YEAR_SINGULAR: 'Jaar',
-                MONTH_PLURAL: 'Maanden',
-                MONTH_SINGULAR: 'Maand',
-                WEEK_PLURAL: 'Weken',
-                WEEK_SINGULAR: 'Week',
-                DAY_PLURAL: '天',
-                DAY_SINGULAR: '天',
-                HOUR_PLURAL: '小时',
-                HOUR_SINGULAR: '小时',
-                MINUTE_PLURAL: '分钟',
-                MINUTE_SINGULAR: '分钟',
-                SECOND_PLURAL: '秒',
-                SECOND_SINGULAR: '秒',
-                MILLISECOND_PLURAL: 'Milliseconden',
-                MILLISECOND_SINGULAR: 'Milliseconde'
-            };
-
-            for (var key in locale) {
-                if (!locale.hasOwnProperty(key)) {
-                    continue;
-                }
-                tick.setConstant(key, locale[key]);
+        for (var key in locale) {
+            if (!locale.hasOwnProperty(key)) {
+                continue;
             }
-            var counter = Tick.count.up('2021-01-01T02:14:00');
-            counter.onupdate = function(value) {
-                // by default value will contain an
-                // array with days, hours, minutes, seconds
-                tick.value = value;
-            };
+            tick.setConstant(key, locale[key]);
         }
+        var counter = Tick.count.up('2021-01-01T02:14:00');
+        counter.onupdate = function (value) {
+            // by default value will contain an
+            // array with days, hours, minutes, seconds
+            tick.value = value;
+        };
+    }
 </script>
 <!-- 翻页时钟 -->
 <script src="./js/flip.js"></script>
@@ -139,4 +141,5 @@
 <script type="text/javascript" src="./js/snowflakes.js" defer></script>
 <!-- 页面访问量统计 -->
 <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
 </html>

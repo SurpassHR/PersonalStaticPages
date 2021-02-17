@@ -38,7 +38,7 @@
 
 .main {
     color: white;
-    padding: 10%;
+    padding: 5% 10%;
     background-color: rgba(255, 255, 255, 0.034);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
@@ -54,6 +54,7 @@
     /*自己的50% */
 
     box-shadow: 0 0px 20px #feffa870;
+    border-radius: 10px;
 }
 
 body {
@@ -97,26 +98,19 @@ footer {
     scrollbar-width: none;
 }
 
-a {
+a, span {
     color: inherit;
     text-decoration: none;
-    transition: color .25s;
+    transition: color .1s;
+}
+
+a:hover, span:hover {
+    color: white;
+    transition: color .1s;
 }
 
 .translucent a {
     cursor: pointer;
-}
-
-iframe {
-    display: block;
-    position: absolute;
-
-    left: 50%;
-    /* 定位父级的50% */
-    bottom: 35%;
-    transform: translate(-50%, -50%);
-    /*自己的50% */
-    opacity: 50%;
 }
 
 .translucent div {
@@ -127,4 +121,24 @@ iframe {
     top: 50%;
     transform: translate(-50%, -50%);
     /*自己的50% */
+}
+
+.tick svg {
+    border-radius: 50%;
+    display: flex !important;
+    filter: invert(1) hue-rotate(180deg) !important;
+    margin: auto !important;
+    justify-content: center !important;
+    transition: .3s;
+}
+
+.tick svg:hover {
+    box-shadow: 0 0 10px #444900;
+    transition: .3s;
+}
+
+.music {
+    margin: auto !important;
+    justify-content: center !important;
+    backdrop-filter: blur(10px);
 }

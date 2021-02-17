@@ -3855,7 +3855,7 @@
                         willDestroy: function willDestroy(tick) {},
                         didDestroy: function didDestroy(tick) {},
                         credits: {
-                            label: 'Powered by 胡高团',
+                            label: '',
                             url: ''
                         }
                     };

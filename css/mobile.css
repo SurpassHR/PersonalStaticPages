@@ -109,6 +109,11 @@ a {
     transition: color .25s;
 }
 
+a:hover, span:hover {
+    color: white;
+    transition: color .1s;
+}
+
 .translucent a {
     cursor: pointer;
 }
@@ -141,18 +146,6 @@ div.grp_photo {
     transform: rotate(5deg);
 }
 
-iframe {
-    display: block;
-    position: absolute;
-    left: 50%;
-    /* 定位父级的50% */
-    bottom: 2%;
-    transform: translate(-50%, -50%);
-    /*自己的50% */
-    opacity: 50%;
-}
-
-
 .translucent div {
     color: rgba(255, 255, 255, .5);
     position: absolute;
@@ -162,3 +155,25 @@ iframe {
     transform: translate(-50%, -50%);
     /*自己的50% */
 }
+
+.github-corner {
+    font-size: 15px;
+    letter-spacing: 0;
+    font-family: "XHEI INTEL" !important;
+    -webkit-font-smoothing: antialiased;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    box-sizing: border-box;
+    -webkit-text-stroke: 0.6px !important;
+    border-bottom: 0;
+    position: fixed;
+    right: 0;
+    text-decoration: none;
+    top: 0;
+    z-index: 1000;
+}
+
+body .github-corner > svg {
+    fill: #42b98393;
+    color:white;
+  }
+  

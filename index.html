@@ -4,6 +4,7 @@
 <head>
     <link rel="stylesheet" href="./css/flip.css">
     <link rel="stylesheet" href="./css/pc.css">
+    <link rel="stylesheet" href="./css/audioplayer.css" />
     <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
     <!--IOS Icon-->
     <!-- <link rel="apple-touch-icon-precomposed" href="@Url.Content("~/Content/res/imgs/touch-icon-iphone.png")" />
@@ -16,15 +17,35 @@
 </head>
 
 <body>
-    <!-- <video controls="false" autoplay="true" name="media"> <source src="./music/Carry You.mp3" type="audio/mpeg"></video> -->
 
-    <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=470547416&auto=1&height=66"></iframe>
+
+    <div class="music">
+
+        <audio src="./music/Carry You.mp3" preload="auto" controls></audio>
+        <script src="./js/jquery.js"></script>
+        <script src="./js/audioplayer.js"></script>
+        <script>$( function() { $( 'audio' ).audioPlayer(); } );</script>
+
+    </div>
 
     <img class=".bg-img" src="https://s3.ax1x.com/2021/01/17/ssnFPI.jpg" alt="">
 
     <div class="main">
 
         <div class="tick" data-did-init="startDateCountUp">
+
+            <a href="https://github.com/SurpassHR/" target="_blank">
+            
+                <svg class="octicon octicon-mark-github v-align-middle" height="32" viewBox="0 0 16 16" version="1.1"
+                width="32" aria-hidden="true">
+
+                    <path fill-rule="evenodd"
+                        d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z">
+                    </path>
+
+                </svg>
+
+            </a>
 
             <div class="title">胡胡和胖胖已经在一起</div>
 
@@ -52,14 +73,16 @@
 
         <div>
 
-            <a href="https://hugaotuan.top/">&copy; 2021 胡睿</a>
+            <a href="https://hugaotuan.top/" target="_blank">&copy; 2021 胡睿</a>
 
-            <span class="hide-on-mobile"> | <a href="http://www.xiyou.edu.cn/" rel="noopener">西安邮电大学</a> | </span>
+            <span class="hide-on-mobile"> | <a href="http://www.xiyou.edu.cn/" target="_blank" rel="noopener">西安邮电大学</a> | </span>
 
-            <a href="https://surpasshr.github.io/lyd/photowall.html">照片墙 | </a>
+            <a href="https://surpasshr.github.io/lyd/photowall.html" target="_blank">照片墙 | </a>
 
             <span id="busuanzi_container_page_pv">
+
                 本页面访问量<span id="busuanzi_value_page_pv"></span>次
+
             </span>
 
         </div>
@@ -69,6 +92,7 @@
 </body>
 
 <script>
+
     //判断是否移动端，如果是则跳转到指定的URL地址
     function browserRedirect(url) {
         //只读的字符串，声明了浏览器用于 HTTP 请求的用户代理头的值
@@ -89,19 +113,19 @@
 
     var snowConfig = {
         color: [266 / 256, 266 / 256, 170 / 256],
-        count: 1000,
+        count: 2000,
         opacity: 0.8,
         density: 1 / 200,
     };
 
     function startDateCountUp(tick) {
         var locale = {
-            YEAR_PLURAL: 'Jaren',
-            YEAR_SINGULAR: 'Jaar',
-            MONTH_PLURAL: 'Maanden',
-            MONTH_SINGULAR: 'Maand',
-            WEEK_PLURAL: 'Weken',
-            WEEK_SINGULAR: 'Week',
+            YEAR_PLURAL: '年',
+            YEAR_SINGULAR: '年',
+            MONTH_PLURAL: '月',
+            MONTH_SINGULAR: '月',
+            WEEK_PLURAL: '周',
+            WEEK_SINGULAR: '周',
             DAY_PLURAL: '天',
             DAY_SINGULAR: '天',
             HOUR_PLURAL: '小时',
@@ -110,8 +134,8 @@
             MINUTE_SINGULAR: '分钟',
             SECOND_PLURAL: '秒',
             SECOND_SINGULAR: '秒',
-            MILLISECOND_PLURAL: 'Milliseconden',
-            MILLISECOND_SINGULAR: 'Milliseconde'
+            MILLISECOND_PLURAL: '毫秒',
+            MILLISECOND_SINGULAR: '毫秒'
         };
 
         for (var key in locale) {
@@ -121,7 +145,7 @@
             tick.setConstant(key, locale[key]);
         }
         var counter = Tick.count.up('2021-01-01T02:14:00');
-        counter.onupdate = function(value) {
+        counter.onupdate = function (value) {
             // by default value will contain an
             // array with days, hours, minutes, seconds
             tick.value = value;
@@ -130,7 +154,7 @@
 
 
     //移动端网页适配
-    (function(win, lib) {
+    (function (win, lib) {
         var doc = win.document; //当前文档对象
         var docEl = doc.documentElement; //文档对象根元素的只读属性
         var metaEl = doc.querySelector('meta[name="viewport"]');
@@ -215,11 +239,11 @@
         }
 
         //resize与pageshow延时300ms触发refreshRem(),使用防抖函数，防止事件被高频触发可能引起性能问题
-        win.addEventListener('resize', function() {
+        win.addEventListener('resize', function () {
             clearTimeout(tid);
             tid = setTimeout(refreshRem, 300);
         }, false);
-        win.addEventListener('pageshow', function(e) {
+        win.addEventListener('pageshow', function (e) {
             //当一条会话历史纪录被执行的时候触发事件，包括后退/前进按钮，同时会在onload页面触发后初始化页面时触发
             if (e.persisted) { //表示网页是否来自缓存
                 clearTimeout(tid);
@@ -231,7 +255,7 @@
         if (doc.readyState === 'complete') {
             doc.body.style.fontSize = 12 * dpr + 'px';
         } else {
-            doc.addEventListener('DOMContentLoaded', function(e) {
+            doc.addEventListener('DOMContentLoaded', function (e) {
                 doc.body.style.fontSize = 12 * dpr + 'px';
             }, false);
         }
@@ -242,14 +266,14 @@
         //实现rem与px相互转换
         flexible.dpr = win.dpr = dpr;
         flexible.refreshRem = refreshRem;
-        flexible.rem2px = function(d) {
+        flexible.rem2px = function (d) {
             var val = parseFloat(d) * this.rem;
             if (typeof d === 'string' && d.match(/rem$/)) {
                 val += 'px';
             }
             return val;
         }
-        flexible.px2rem = function(d) {
+        flexible.px2rem = function (d) {
             var val = parseFloat(d) / this.rem;
             if (typeof d === 'string' && d.match(/px$/)) {
                 val += 'rem';
