@@ -25,7 +25,7 @@ class SnowProgram {
       const { density, depth, count, gravity, speed, color, opacity, snowflake } =
         config || {};
   
-      this.density = density || 1 / 90;
+      this.density = density || 1 / 300;
       this.depth = depth || 80;
       this.count = count || 7000;
       this.gravity = gravity || 50;
