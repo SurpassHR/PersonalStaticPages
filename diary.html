@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title>恋爱日记清单</title>
+	<meta name="author" content="HRLYD" />
+	<meta name="description" content="愿你三冬暖，愿你春不寒；愿你天黑有灯，下雨有伞。愿你余生有我相伴……" />
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="bookmark" href="favicon.ico" />
+	<link rel="stylesheet" href="css/style.css" type="text/css" />
+	<link rel="stylesheet" href="css/layer.css" type="text/css" />
+	<script src="https://libs.baidu.com/jquery/1.8.3/jquery.min.js"></script>
+</head>
+
+<body>
+	<div id="thumbnail_canvas" class="warp">
+
+		<div class="chest">
+			<div class="heart left sided top"></div>
+			<div class="heart center"></div>
+			<div class="heart right sided"></div>
+
+		</div>
+
+		<canvas id="header_canvas" style="position:absolute;top:0"></canvas>
+
+	</div>
+	<div class="nav">
+		<div>
+			<ul>
+				<li><a href="/">首页</a></li>
+				<li><a href="diary.php">爱的清单</a></li>
+			</ul>
+		</div>
+	</div>
+
+
+	<div class="love">
+		<div class="love_warp">
+			<div class="love-04 boy">
+				<img src="https://pic.rmb.bdstatic.com/bjh/4c629545cafd82a38baf6400e92354cd.jpeg" alt="微信图片_20210222151635.jpg" title="微信图片_20210222151635.jpg" />
+			</div>
+			<div class="love-04 rj" id="lovetm">
+				<h4>🧑‍🤝‍🧑我们携手度过了</h4>
+				<p></p>
+			</div>
+			<div class="love-04 aj">
+				<img src="image/love.svg">
+			</div>
+			<div class="love-04 girl">
+				<img src="https://pic.rmb.bdstatic.com/bjh/256d9982bf806315c0f24ed1e0375ceb.jpeg" alt="微信图片_20210222151626.jpg" title="微信图片_20210222151626.jpg" />
+			</div>
+		</div>
+
+	</div>
+	<div class="clear"></div>
+	<div class="wap-love">
+		<div class="aj" id="wap-lovetm">
+			<h4>我们携手度过了</h4>
+			<p></p>
+		</div>
+
+	</div>
+	<div class="shiyan love-100">
+		<p>💕世间最动情之事，莫过于两人相依💑，走过四季三餐的温暖。</p>
+		<p>📜一百件事记录着我们的点点滴滴，你一百种样子💃，我一百种喜欢。</p>
+		<hr>
+		<br>
+		<div class="love100">
+			<ul>
+
+				<li>⚪&nbsp;一起看日出🌅<span>1</span></li>
+
+				<li>⚪&nbsp;一起看日落🌄<span>2</span></li>
+
+				<li>⚪&nbsp;一起看绚烂的烟花🌟<span>3</span></li>
+
+				<li>⚪&nbsp;一起吃路边摊🍖<span>4</span></li>
+
+				<li>⚪&nbsp;一起唱首歌并录下来🎤<span>5</span></li>
+
+				<li>⚪&nbsp;一起穿情侣装逛街👫<span>6</span></li>
+
+				<li>⚪&nbsp;一起去游乐园（迪士尼）嗨一天🎈<span>7</span></li>
+
+				<li>⚪&nbsp;陪对方过生日🎂<span>8</span></li>
+
+				<li>⚪&nbsp;一起去海南的天涯海角🌴<span>9</span></li>
+
+				<li>⚪&nbsp;一起去你上过的学校👫<span>10</span></li>
+
+				<li>⚪&nbsp;一起去我上过的学校👫<span>11</span></li>
+
+				<li>⚪&nbsp;一起放孔明灯🏮<span>12</span></li>
+
+				<li>⚪&nbsp;去遍中国的每一个省份🚉<span>13</span></li>
+
+				<li>⚪&nbsp;一起去钓鱼🐟<span>14</span></li>
+
+				<li>⚪&nbsp;一起去当志愿者、义工👮<span>15</span></li>
+
+				<li>⚪&nbsp;一起坐一辆没坐过的车，在陌生的地方下车逛🚃<span>16</span></li>
+
+				<li>⚪&nbsp;一起淋一次雨，在雨中漫步☔<span>17</span></li>
+
+				<li>⚪&nbsp;亲自为对方做一次早餐🍔<span>18</span></li>
+
+				<li>⚪&nbsp;在沙滩上写下彼此的名字✍<span>19</span></li>
+
+				<li>⚪&nbsp;一起看初雪⛄<span>20</span></li>
+
+				<li>⚪&nbsp;穿彼此的衣服👯<span>21</span></li>
+
+				<li>⚪&nbsp;一起去坐过山车🎎<span>22</span></li>
+
+				<li>⚪&nbsp;嘴对嘴吃东西🍜<span>23</span></li>
+
+				<li>⚪&nbsp;一起去游泳🏊<span>24</span></li>
+
+				<li>⚪&nbsp;去遍人民币背后的风景⛳<span>25</span></li>
+
+				<li>⚪&nbsp;两个人一起锻炼运动🏃💃<span>26</span></li>
+
+				<li>⚪&nbsp;一起爬山💑<span>27</span></li>
+
+				<li>⚪&nbsp;在耳边低声说&quot;我爱你&quot;💖<span>28</span></li>
+
+				<li>⚪&nbsp;一起对着流星许愿🌠<span>29</span></li>
+
+				<li>⚪&nbsp;一起牵手压马路👫<span>30</span></li>
+
+				<li>⚪&nbsp;一起坐在阳台，晒着太阳，磕着瓜子，聊着天👐<span>31</span></li>
+
+				<li>⚪&nbsp;一起养一只宠物🐶<span>32</span></li>
+
+				<li>⚪&nbsp;一起在公共场合下一起喝娃哈哈🍼<span>33</span></li>
+
+				<li>⚪&nbsp;一起去买菜、做饭、刷碗🍛<span>34</span></li>
+
+				<li>⚪&nbsp;一起去坐热气球🎈<span>35</span></li>
+
+				<li>⚪&nbsp;带我去你童年居住的地方走一走👩<span>36</span></li>
+
+				<li>⚪&nbsp;带你去我童年居住的地方走一走🧑<span>37</span></li>
+
+				<li>⚪&nbsp;一起堆雪人⛄<span>38</span></li>
+
+				<li>⚪&nbsp;一起坐摩天轮，在最高处拥吻💏<span>39</span></li>
+
+				<li>⚪&nbsp;一起用勺子吃西瓜🍉<span>40</span></li>
+
+				<li>⚪&nbsp;一起捡贝壳🐚<span>41</span></li>
+
+				<li>⚪&nbsp;看一次冰灯⛲<span>42</span></li>
+
+				<li>⚪&nbsp;一起去海边看海🌊<span>43</span></li>
+
+				<li>⚪&nbsp;一起走沙滩🚶<span>44</span></li>
+
+				<li>⚪&nbsp;一起去看支付宝共同种下的树🎋<span>45</span></li>
+
+				<li>⚪&nbsp;一起跨年，通宵守岁📺<span>46</span></li>
+
+				<li>⚪&nbsp;送彼此出门，给一个大大的拥抱与啵啵😚<span>47</span></li>
+
+				<li>⚪&nbsp;一起看书，装满我们的书架💡<span>48</span></li>
+
+				<li>⚪&nbsp;为对方穿衣服、系鞋带🙅<span>49</span></li>
+
+				<li>⚪&nbsp;推对方玩秋千💁<span>50</span></li>
+
+				<li>⚪&nbsp;一起去参加朋友的婚礼💕<span>51</span></li>
+
+				<li>⚪&nbsp;在马尔代夫，体验玻璃地板的海上小屋🏡<span>52</span></li>
+
+				<li>⚪&nbsp;一起坐一次飞机🛫<span>53</span></li>
+
+				<li>⚪&nbsp;一起坐一次游轮🚤<span>54</span></li>
+
+				<li>⚪&nbsp;一起去看一次演唱会🎵<span>55</span></li>
+
+				<li>⚪&nbsp;一起在浴缸里泡澡🛀<span>56</span></li>
+
+				<li>⚪&nbsp;一起去看海豚🐬<span>57</span></li>
+
+				<li>⚪&nbsp;一起去捡落叶🍁<span>58</span></li>
+
+				<li>⚪&nbsp;开车红灯时叫你啵啵🚗<span>59</span></li>
+
+				<li>⚪&nbsp;一起完成一个冒险刺激的挑战💀<span>60</span></li>
+
+				<li>⚪&nbsp;一起沿着铁轨走🚂<span>61</span></li>
+
+				<li>⚪&nbsp;一起去看埃菲尔铁塔，在塔下拥吻👄<span>62</span></li>
+
+				<li>⚪&nbsp;一起设计整理房间💎<span>63</span></li>
+
+				<li>⚪&nbsp;徒步走完一个地方👟<span>64</span></li>
+
+				<li>⚪&nbsp;与好朋友一起，享受四人约会的美妙💜💛💚💙<span>65</span></li>
+
+				<li>⚪&nbsp;为他打领带🔫<span>66</span></li>
+
+				<li>⚪&nbsp;我叫你一次“老婆”，你叫我一次“老公”👨‍❤️‍💋‍👨<span>67</span></li>
+
+				<li>⚪&nbsp;带你在午夜开车兜风🚙<span>68</span></li>
+
+				<li>⚪&nbsp;为她涂指甲油💅<span>69</span></li>
+
+				<li>⚪&nbsp;来一次浪漫的小情趣😍<span>70</span></li>
+
+				<li>⚪&nbsp;在阳台上养着一排多肉植物🥦<span>71</span></li>
+
+				<li>⚪&nbsp;一起过一次六一儿童节👧👦<span>72</span></li>
+
+				<li>⚪&nbsp;入住一次五星级酒店🏨<span>73</span></li>
+
+				<li>⚪&nbsp;为彼此换一个对方心仪的发型，不论长短烫染💇<span>74</span></li>
+
+				<li>⚪&nbsp;偷偷观察对方熟睡的模样，记录下来📷<span>75</span></li>
+
+				<li>⚪&nbsp;一起去打电玩👾<span>76</span></li>
+
+				<li>⚪&nbsp;一起给对方写信，读给对方听📄<span>77</span></li>
+
+				<li>⚪&nbsp;一起滑雪，摔倒也要拉着你🎿<span>78</span></li>
+
+				<li>⚪&nbsp;拥有我们独特的情侣戒指💍<span>79</span></li>
+
+				<li>⚪&nbsp;一起完成一副千片拼图😜<span>80</span></li>
+
+				<li>⚪&nbsp;一起去天安门看升旗仪式🚄<span>81</span></li>
+
+				<li>⚪&nbsp;一起包饺子🥟<span>82</span></li>
+
+				<li>⚪&nbsp;一起去吃自助餐，把没尝过的食材都尝试一遍🔪<span>83</span></li>
+
+				<li>⚪&nbsp;去拍一回写真📸<span>84</span></li>
+
+				<li>⚪&nbsp;一起去新加坡看焰火表演🎇<span>85</span></li>
+
+				<li>⚪&nbsp;一起去看极光⚡⚡<span>86</span></li>
+
+				<li>⚪&nbsp;背着她走一段路👣<span>87</span></li>
+
+				<li>⚪&nbsp;一起赏月🌙<span>88</span></li>
+
+				<li>⚪&nbsp;一起去看樱花🌸<span>89</span></li>
+
+				<li>⚪&nbsp;以喝交杯酒的方式喝东西🥂<span>90</span></li>
+
+				<li>⚪&nbsp;一起买一张彩票🎫<span>91</span></li>
+
+				<li>⚪&nbsp;在树下埋下我们的约定🎑<span>92</span></li>
+
+				<li>⚪&nbsp;带上你我的家人去聚会、旅游🚙<span>93</span></li>
+
+				<li>⚪&nbsp;来一场难忘的求婚🎁💍<span>94</span></li>
+
+				<li>⚪&nbsp;在朋友面前大方介绍彼此💋<span>95</span></li>
+
+				<li>⚪&nbsp;拍属于我们自己的婚纱照🎎<span>96</span></li>
+
+				<li>⚪&nbsp;互相在朋友圈晒结婚证📇<span>97</span></li>
+
+				<li>⚪&nbsp;设计一场梦中的婚礼💤🌹🎉<span>98</span></li>
+
+				<li>⚪&nbsp;拥有一个爱的结晶，给予宝贝最好的爱👶👼<span>99</span></li>
+
+				<li>⚪&nbsp;余生漫漫，执子之手，与子偕老💏<span>100</span></li>
+
+			</ul>
+		</div>
+	</div>
+
+	<div class="footer" style="position:relative;margin-top: 20px;">
+		<p>©新年的凌晨丨HR 💕 LYD丨一场不分手的恋爱</p>
+	</div>
+
+	<script src="js/i.js"></script>
+	<script src="js/bubble.js"></script>
+	<script src="js/love.js"></script>
+	<script>
+		$(function () {
+
+			var d = $(".love100>ul>li span");
+			d.each(function () {
+				var ii = 1;
+				d.html(i++);
+			});
+		});
+	</script>
+</body>
+
+</html>

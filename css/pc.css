@@ -1,16 +1,11 @@
-.bg-img {
-    -webkit-filter: blur(10px);
-    filter: blur(10px);
+/* .bg-img {
     height: 100%;
     left: 0;
-    object-fit: cover;
-    opacity: .25;
-    position: fixed;
     top: 0;
     transform: scale(1.1);
     width: 100%;
     z-index: -1;
-}
+} */
 
 .tick {
     padding-bottom: 1em;
@@ -62,11 +57,9 @@ body {
     width: 100%;
     height: 100%;
     margin: 0;
-    /* background: linear-gradient(to bottom, #57c1eb 0%, #246fa8 100%); */
     position: relative;
     overflow: hidden;
     -webkit-tap-highlight-color: transparent;
-    /* background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%); */
 }
 
 footer {
@@ -98,13 +91,13 @@ footer {
     scrollbar-width: none;
 }
 
-a, span {
+a, #busuanzi_container_page_pv {
     color: inherit;
     text-decoration: none;
     transition: color .1s;
 }
 
-a:hover, span:hover {
+a:hover, #busuanzi_container_page_pv:hover {
     color: white;
     transition: color .1s;
 }
